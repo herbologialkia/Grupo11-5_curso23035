@@ -1,0 +1,59 @@
+<!-- acá estructuramos a grandes rasgos la página y nos llevamos de acá el footer y el header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTANOS</title>
+    <link rel="stylesheet" href="/Carpeta CSS/home.css">
+    <link rel="icon" href="../img/icons8-correo-16.ico">
+
+</head>
+<body>
+<header>
+  <p>A continuación te vamos a pedir algunos datos para ponernos en contacto con vos. Por favor, completá todos los campos.</p>
+</header>
+<nav>
+    <a href="home.html">HOME</a>
+    <a href="#nosotros">NOSOTROS</a>
+    <a href="contacto.html" target="_blank">CONTACTANOS</a>
+</nav>
+<section class="intro">
+  <form action="mailto:fernandocaporaletti@gmail.com" method="post" enctype="text/plain">
+    <fieldset>
+      <legend>Por favor, completá los siguientes datos:</legend>
+      <label for="fname">Nombre:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Apellido:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Este campo es obligatorio"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <label>Género:</label><br><br>
+      <input type="radio" name="gender" value="1">Masculino<br><br>
+      <input type="radio" name="gender" value="2">Femenino<br><br>
+      <input type="radio" name="gender" value="3">No binario<br><br>
+      <label for="age">Edad:</label>
+      <input size="2" type="number" id="age" name="age" placeholder="ingresá tu edad con dos dígitos"><br><br>
+      <label>En qué tipo de juego estás interesad@:</label><br><br>
+      <input type="checkbox" name="check" value="1">Etrategia<br><br>
+      <input type="checkbox" name="check" value="2">Infantiles<br><br>
+      <input type="checkbox" name="check" value="3">Naipes<br><br>
+      <label>En qué momento del día te podemos contactar:</label><br><br>
+      <select size="2" name="horario">
+        <option>Mañana</option>
+        <option>Tarde</option>
+        <option>Noche</option>
+      </select><br><br>
+      <label for="query">Escribí aquí tu consulta:</label>
+      <textarea name="query" rows="10" cols="40" id="query" name="query"></textarea><br><br>
+      <input type="submit" value="Submit">
+     </fieldset>
+  </form>
+</section>
+<footer>
+<p id="nosotros">Propiedad del grupo 11. Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
