@@ -1,4 +1,10 @@
 /* acá estructuramos a grandes rasgos la página y nos llevamos de acá el footer y el header */
+body{
+    background-color: #f9df94;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ver cual poner */
+    
+}
+/* flexbox */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -7,7 +13,7 @@
   align-items: center;
   align-content: normal;
 }
-
+/* porque si son iguales los atributos están separados? */
 .flex-items:nth-child(1) {
   display: block;
   flex-grow: 0;
@@ -34,6 +40,18 @@
   align-self: auto;
   order: 0;
 }
+.flex-items{
+    width: 30%;
+    margin: 5%;
+    border-color: #54343f;
+    border-width: 5px;
+    border-style: solid;
+    padding: 1%;
+    background-color: #e77a77;
+}
 .imagen{
-    width: 50%;
+    width: 100%;
+}
+h3{
+   color:#54343f;
 }
