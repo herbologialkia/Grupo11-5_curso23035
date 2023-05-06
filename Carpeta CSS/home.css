@@ -2,6 +2,7 @@
 body{
     background-color: #f9df94;
 }
+/* flexbox */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -10,7 +11,7 @@ body{
   align-items: center;
   align-content: normal;
 }
-
+/* porque si son iguales los atributos están separados? */
 .flex-items:nth-child(1) {
   display: block;
   flex-grow: 0;
