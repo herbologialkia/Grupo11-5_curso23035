@@ -1,9 +1,17 @@
 /* acá estructuramos a grandes rasgos la página y nos llevamos de acá el footer y el header */
 body{
     background-color: #f9df94;
+    color:#54343f;
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ver cual poner */
     
 }
+/* nav{
+  background-color: #f6a570;
+  margin:0mm;
+  padding:0px;
+  left:0px;
+  top:0px;
+} */
 /* flexbox */
 .flex-container {
   display: flex;
@@ -42,16 +50,20 @@ body{
 }
 .flex-items{
     width: 30%;
-    margin: 5%;
+    margin: 1%;
     border-color: #54343f;
     border-width: 5px;
     border-style: solid;
     padding: 1%;
     background-color: #e77a77;
 }
+a:hover{
+  background-color: red;
+}
 .imagen{
     width: 100%;
 }
-h3{
+a h3{
    color:#54343f;
+   margin-top: -5%;
 }
