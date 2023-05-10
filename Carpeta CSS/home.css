@@ -16,6 +16,33 @@ nav{
   background: linear-gradient(to top,#e77a7788,#e77a7788);
   z-index: 100;
 }
+.navegador {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: none;
+  width: 95%;
+  height: 95%;
+  }
+ .masterhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+#logotipo{
+  width: 5em;
+  height: 5em;
+}
+h1{
+  display: inline;
+  font-size: 3em;
+  font-family: 'Flavors',cursive;
+  color: black;
+}
   /* display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,10 +102,10 @@ nav{
     width: 15em;
     height: 15em;
 }
-a:hover{
+/* a:hover{
   background-color: aquamarine;
   transform: scale(1.5 1.5)  Important!;
-}
+} */
 .imagen{
     display: grid;
     place-items: center;
@@ -89,10 +116,8 @@ a:hover{
   width: 5em;
   height: 5em;
 }
-.navegador{
-  width: 95%;
-  height: 95%;
-  background-color: aliceblue;
+.iconos:hover{
+transform: scale(1.5 , 1.5);
 }
 a h3{
    color:#54343f;
