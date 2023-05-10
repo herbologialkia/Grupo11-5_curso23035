@@ -5,18 +5,33 @@ body{
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ver cual poner */
     
 }
-/* nav{
-  background-color: #f6a570;
-  margin:0mm;
-  padding:0px;
+nav{
+  /* background-color: #f6a570; */
+  padding: 5px;
   left:0px;
   top:0px;
+  position: fixed;
+  width: 100%;
+  justify-content:space-around;
+  background: linear-gradient(to top,#e77a7788,#e77a7788);
+  z-index: 100;
+}
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9d78ce;
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100
 } */
 /* flexbox */
 .flex-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: normal;
@@ -49,21 +64,39 @@ body{
   order: 0;
 }
 .flex-items{
-    width: 30%;
+    /* width: 30%; */
     margin: 1%;
-    border-color: #54343f;
+    border-color: #e77a77;
     border-width: 5px;
-    border-style: solid;
+    border-style: outset;
     padding: 1%;
     background-color: #e77a77;
+    justify-items: center;
+    width: 15em;
+    height: 15em;
 }
 a:hover{
-  background-color: red;
+  transition: ease-in-out 0.2s;
 }
 .imagen{
-    width: 100%;
+    display: grid;
+    place-items: center;
+    width: 95%;
+    height: 95%;
+}
+.iconos{
+  width: 5em;
+  height: 5em;
+}
+.navegador{
+  width: 95%;
+  height: 95%;
+  background-color: aliceblue;
 }
 a h3{
    color:#54343f;
-   margin-top: -5%;
+   width: 100%;
+   text-transform: uppercase;
+   text-align: center;
+   /* margin-top: -5%; */
 }
