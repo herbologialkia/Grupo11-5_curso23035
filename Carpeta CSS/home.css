@@ -2,8 +2,12 @@
 body{
     background-color: #f9df94;
     color:#54343f;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ver cual poner */
+    font-family:Arial, Helvetica, sans-serif;
     
+}
+/* quitar efectos de los links */
+a{
+  text-decoration: none;
 }
 nav{
   /* background-color: #f6a570; */
@@ -16,12 +20,22 @@ nav{
   background: linear-gradient(to top,#e77a7788,#e77a7788);
   z-index: 100;
 }
+/* los link dentro de la barra de navegación */
+nav a{
+background-color: #e77a77;
+padding: 5px;
+border-radius: 5px;
+text-align: center;
+margin: 5px;
+color:#f9df94;
+font-weight: ;
+}
 .navegador {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
+  grid-column-gap: 5px;
   grid-row-gap: 0px;
   background: none;
   width: 95%;
@@ -33,6 +47,7 @@ nav{
   justify-content: center;
   margin-top: 2em;
 }
+/* logo y nombre del proyecto */
 #logotipo{
   width: 5em;
   height: 5em;
@@ -56,18 +71,6 @@ h1{
   border-bottom: 2px solid #54343f;
   text-align: justify;
 }
-}
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9d78ce;
-    height: 8rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100
-} */
 /* flexbox */
 .flex-container {
   display: flex;
@@ -134,9 +137,10 @@ h1{
 transform: scale(1.5 , 1.5);
 }
 a h3{
-   color:#54343f;
-   width: 100%;
-   text-transform: uppercase;
-   text-align: center;
+  text-decoration: none;
+  color:#54343f;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
    /* margin-top: -5%; */
 }
