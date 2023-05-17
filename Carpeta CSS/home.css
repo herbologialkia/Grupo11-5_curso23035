@@ -28,7 +28,8 @@ border-radius: 5px;
 text-align: center;
 margin: 5px;
 color:#f9df94;
-font-weight: ;
+font-weight: bold;
+font-size: 1em;
 }
 .navegador {
   display: grid;
@@ -40,6 +41,11 @@ font-weight: ;
   background: none;
   width: 95%;
   height: 95%;
+  }
+  /* media query para cambiar la configuración del navegador para pantallas menores a 600px */
+  @media screen and (max-width:600px) {
+  nav{background-color: blue;}
+    
   }
  .masterhead {
   display: flex;
