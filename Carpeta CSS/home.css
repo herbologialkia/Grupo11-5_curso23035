@@ -9,6 +9,14 @@ body{
 a{
   text-decoration: none;
 }
+#hamburguesa{
+  width: 2em;
+  position:fixed;
+  right:0px;
+  top:0px;
+  padding: 5px;
+  visibility: hidden;
+}
 nav{
   /* background-color: #f6a570; */
   padding: 5px;
@@ -44,9 +52,25 @@ font-size: 1em;
   }
   /* media query para cambiar la configuración del navegador para pantallas menores a 600px */
   @media screen and (max-width:600px) {
-  nav{background-color: blue;}
-    
+    nav{  visibility: hidden;}
+    .navegador{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    display: grid;
+    align-items: center;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    background: none;
+    }
+    #hamburguesa{
+      visibility: visible;
+    }
+    }
+  #hamburguesa:hover{
+    rotate: 10;
+    /* nav {visibility: visible;} */
   }
+
  .masterhead {
   display: flex;
   align-items: center;
