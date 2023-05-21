@@ -20,7 +20,7 @@ a{
 nav{
   /* background-color: #f6a570; */
   padding: 5px;
-  left:0px;
+  right:0px;
   top:0px;
   position: fixed;
   width: 100%;
@@ -52,7 +52,10 @@ font-size: 1em;
   }
   /* media query para cambiar la configuración del navegador para pantallas menores a 600px */
   @media screen and (max-width:600px) {
-    nav{  visibility: hidden;}
+    nav{  width:auto;
+      /* visibility: hidden; */
+      display: none;
+    } 
     .navegador{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -65,10 +68,14 @@ font-size: 1em;
     #hamburguesa{
       visibility: visible;
     }
-    }
-  #hamburguesa:hover{
-    rotate: 10;
+  #hamburguesa:active + nav{
+    /* visibility: visible; */
+    display: block;
     /* nav {visibility: visible;} */
+  }
+  nav:hover {
+    display: block;
+  }
   }
 
  .masterhead {
