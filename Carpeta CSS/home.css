@@ -1,47 +1,52 @@
 /* acá estructuramos a grandes rasgos la página y nos llevamos de acá el footer y el header */
-body{
-    background-color: #f9df94;
-    color:#54343f;
-    font-family:Arial, Helvetica, sans-serif;
-    
+body {
+  background-color: #f9df94;
+  color: #54343f;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
+
 /* quitar efectos de los links */
-a{
+a {
   text-decoration: none;
 }
-p{
+
+p {
   font-size: large;
 }
-#hamburguesa{
+
+#hamburguesa {
   width: 2em;
-  position:fixed;
-  right:0px;
-  top:0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
   padding: 5px;
   visibility: hidden;
 }
-nav{
-  /* background-color: #f6a570; */
+
+nav {
   padding: 5px;
-  right:0px;
-  top:0px;
+  right: 0px;
+  top: 0px;
   position: fixed;
   width: 100%;
-  justify-content:space-around;
-  background: linear-gradient(to top,#e77a7788,#e77a7788);
+  justify-content: space-around;
+  background: linear-gradient(to top, #e77a7788, #e77a7788);
   z-index: 100;
 }
+
 /* los link dentro de la barra de navegación */
-nav a{
-background-color: #e77a77;
-padding: 5px;
-border-radius: 5px;
-text-align: center;
-margin: 5px;
-color:#f9df94;
-font-weight: bold;
-font-size: 1em;
+nav a {
+  background-color: #e77a77;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px;
+  color: #f9df94;
+  font-weight: bold;
+  font-size: 1em;
 }
+
 .navegador {
   display: grid;
   align-items: center;
@@ -52,14 +57,16 @@ font-size: 1em;
   background: none;
   width: 95%;
   height: 95%;
-  }
-  /* media query para cambiar la configuración del navegador para pantallas menores a 600px */
+}
+
+/* media query para cambiar la configuración del navegador para pantallas menores a 600px */
 @media screen and (max-width:600px) {
-    nav{  width:auto;
-      /* visibility: hidden; */
-      display: none;
-    } 
-    .navegador{
+  nav {
+    width: auto;
+    display: none;
+  }
+
+  .navegador {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
     display: grid;
@@ -67,54 +74,61 @@ font-size: 1em;
     grid-column-gap: 5px;
     grid-row-gap: 0px;
     background: none;
-    }
-    #hamburguesa{
-      visibility: visible;
-    }
-  #hamburguesa:active + nav{
-    /* visibility: visible; */
-    display: block;
-    /* nav {visibility: visible;} */
   }
+
+  #hamburguesa {
+    visibility: visible;
+  }
+
+  #hamburguesa:active+nav {
+    display: block;
+  }
+
   nav:hover {
     display: block;
   }
-  }
+}
 
- .masterhead {
+.masterhead {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2em;
 }
+
 /* logo y nombre del proyecto */
-#logotipo{
+#logotipo {
   width: 5em;
   height: 5em;
 }
-h1{
+
+h1 {
   display: inline;
   font-size: 3em;
-  font-family: 'Flavors',cursive;
+  font-family: 'Flavors', cursive;
   color: black;
 }
-.intro{
+
+.intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.intro p{
+
+.intro p {
   margin: 0% 6% 3%;
   padding: 2% 2%;
   border-top: 2px solid #54343f;
   border-bottom: 2px solid #54343f;
   text-align: justify;
 }
-.intro h2{
-  text-transform: uppercase ;
+
+.intro h2 {
+  text-transform: uppercase;
 }
-/* flexbox */
+
+/* flexbox para tarjetas*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -123,6 +137,7 @@ h1{
   align-items: center;
   align-content: normal;
 }
+
 /* porque si son iguales los atributos están separados? */
 .flex-items:nth-child(1) {
   display: block;
@@ -150,55 +165,55 @@ h1{
   align-self: auto;
   order: 0;
 }
-.flex-items{
-    /* width: 30%; */
-    margin: 1%;
-    border-color: #e77a77;
-    border-width: 5px;
-    border-style: outset;
-    padding: 1%;
-    background-color: #e77a77;
-    justify-items: center;
-    width: 15em;
-    height: 15em;
+
+.flex-items {
+  margin: 1%;
+  border-color: #e77a77;
+  border-width: 5px;
+  border-style: outset;
+  padding: 1%;
+  background-color: #e77a77;
+  justify-items: center;
+  width: 15em;
+  height: 15em;
 }
-@media screen  and (min-width:1800px) {
-  .intro p{
+
+@media screen and (min-width:1800px) {
+  .intro p {
     max-width: 1800px;
   }
-  .flex-container{
-    margin-left: 90px;
-    justify-content:center;
-  }
 
+  .flex-container {
+    margin-left: 90px;
+    justify-content: center;
+  }
 }
-/* a:hover{
-  background-color: aquamarine;
-  transform: scale(1.5 1.5)  Important!;
-} */
-.imagen{
-    display: grid;
-    place-items: center;
-    width: 95%;
-    height: 95%;
+
+.imagen {
+  display: grid;
+  place-items: center;
+  width: 95%;
+  height: 95%;
 }
-.iconos{
+
+.iconos {
   width: 5em;
   height: 5em;
 }
-.iconos:hover{
-transform: scale(1.5 , 1.5);
+
+.iconos:hover {
+  transform: scale(1.5, 1.5);
 }
-a h3{
+
+a h3 {
   text-decoration: none;
-  color:#54343f;
+  color: #54343f;
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-   /* margin-top: -5%; */
 }
 
-.fotos{
+.fotos {
   width: 14em;
   height: 10em;
 }
@@ -212,14 +227,66 @@ a h3{
   align-content: normal;
   width: 98%;
 }
-.beneficios-flex p{
+
+.beneficios-flex p {
   width: 95%;
   max-width: 500px;
   padding: 2%;
   text-align: justify;
 }
-.beneficios h2{
+
+.beneficios h2 {
   width: 100%;
   margin: 2em;
   text-align: center;
 }
+
+.foo{
+  background-color:  hsl(2, 70%, 69%);
+  color:#54343f;
+  padding: 5px;
+  border-color: #54343f;
+  border-radius: 5px;
+}
+/* Estilos del botón de whatsapp */
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+  background: white;
+  color: #25d366;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: 3em;
+  padding: 1em;
+  text-align: center;
+  background: linear-gradient(to top, #e77a7788, #e77a7788);
+  }
+  
+  #nosotros{
+    margin: 1.5em;
+  }
