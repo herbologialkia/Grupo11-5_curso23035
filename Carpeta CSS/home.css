@@ -286,7 +286,34 @@ footer {
   text-align: center;
   background: linear-gradient(to top, #e77a7788, #e77a7788);
   }
-  
+
   #nosotros{
     margin: 1.5em;
   }
+  /* Definición de estilos del formulario */
+    /* Definición de la rejilla */
+    form {
+      display: grid;
+      grid-template-columns: 10fr 2fr ;
+      grid-gap: 1rem;
+    }
+    fieldset{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 1rem;
+    }
+  
+    /* Estilos para las etiquetas */
+    label {
+      font-weight: bold;
+    }
+  
+    /* Estilos para los campos de entrada */
+    input, select {
+      border: 1px solid gray;
+      border-radius: 4px;
+      padding: 0.5rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+      width: 100%;
+    }

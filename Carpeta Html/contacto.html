@@ -1,59 +1,109 @@
 <!-- acá estructuramos a grandes rasgos la página y nos llevamos de acá el footer y el header -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTANOS</title>
-    <link rel="stylesheet" href="../Carpeta CSS/home.css">
-    <link rel="icon" href="../img/icons8-correo-16.ico">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACTANOS</title>
+  <link rel="stylesheet" href="../Carpeta CSS/home.css">
+  <link rel="icon" href="../img/icons8-correo-16.ico">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<header>
-  <p>A continuación te vamos a pedir algunos datos para ponernos en contacto con vos. Por favor, completá todos los campos.</p>
-</header>
-<nav>
-    <a href="home.html">HOME</a>
-    <a href="#nosotros">NOSOTROS</a>
-    <a href="contacto.html" target="_blank">CONTACTANOS</a>
-</nav>
-<section class="intro">
-  <form action="mailto:fernandocaporaletti@gmail.com" method="post" enctype="text/plain">
-    <fieldset>
-      <legend>Por favor, completá los siguientes datos:</legend>
-      <label for="fname">Nombre:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Apellido:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required placeholder="Este campo es obligatorio"><br><br>
-      <label for="birthday">Birthday:</label>
-      <input type="date" id="birthday" name="birthday"><br><br>
-      <label>Género:</label><br><br>
-      <input type="radio" name="gender" value="1">Masculino<br><br>
-      <input type="radio" name="gender" value="2">Femenino<br><br>
-      <input type="radio" name="gender" value="3">No binario<br><br>
-      <label for="age">Edad:</label>
-      <input size="2" type="number" id="age" name="age" placeholder="ingresá tu edad con dos dígitos"><br><br>
-      <label>En qué tipo de juego estás interesad@:</label><br><br>
-      <input type="checkbox" name="check" value="1">Etrategia<br><br>
-      <input type="checkbox" name="check" value="2">Infantiles<br><br>
-      <input type="checkbox" name="check" value="3">Naipes<br><br>
-      <label>En qué momento del día te podemos contactar:</label><br><br>
-      <select size="2" name="horario">
-        <option>Mañana</option>
-        <option>Tarde</option>
-        <option>Noche</option>
-      </select><br><br>
-      <label for="query">Escribí aquí tu consulta:</label>
-      <textarea name="query" rows="10" cols="40" id="query" name="query"></textarea><br><br>
-      <input type="submit" value="Submit">
-     </fieldset>
-  </form>
-</section>
-<footer>
-<p id="nosotros">Propiedad del grupo 11. Todos los derechos reservados</p>
-</footer>
+  <header>
+    <img id="hamburguesa" src="../img/hamburguesa.png" alt="hbg">
+    <nav>
+      <div class="navegador">
+        <a href="home.html">HOME</a>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <a href="#nosotros">NOSOTROS</a>
+        <a href="contacto.html" target="_blank">CONTACTANOS</a>
+      </div>
+    </nav>
+    <div class="masterhead">
+      <span></span>
+      <h1>Maya</h1>
+      <img src="../img/amistad.png" alt="logotipo" id="logotipo">
+      <h1>Games</h1>
+    </div>
+  </header>
+  <section class="formulario">
+    <h3>A continuacion te solicitamos algunos datos para ponernos en contacto.</h3>
+
+    <h3>Completa el siguiente formulario.</h3><br>
+
+    <form action="show_data.html" target="_blank" autocomplete="off">
+      <fieldset>
+
+        <label for="nombre">Nombre/s :</label>
+        <input type="text" autofocus id="nombre" name="Nombre" required>
+
+        <label for="apellido">Apellido/s :</label>
+        <input type="text" id="apellido" name="Apellido" required>
+
+        <label for="telefono">Nùmero de telefono :</label>
+        <input type="tel" id="telefono" name="Numero_de_telefono" required>
+
+        <label>Tu linea es :</label>
+        <select size="1" name="Tipo_de_linea">
+          <option>Movil</option>
+          <option>Fija</option>
+        </select>
+
+        <label>Te podemos contactar por la :</label>
+        <select size="1" name="Contactar_por_la" required>
+          <option>Manana</option>
+          <option>Tarde</option>
+          <option>Noche</option>
+        </select>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="E-mail" required>
+
+        <label for="nacimiento">Fecha de nacimiento :</label>
+        <input type="date" id="nacimiento" name="Fecha_de_nacimiento  " required>
+
+        <label>Género :</label>
+        <fieldset style="display: grid; grid-template-columns: 2fr  2fr; grid-gap: 1rem">
+          <input type="radio" name="Genero" value="Masculino" checked>Masculino
+          <input type="radio" name="Genero" value="Femenino">Femenino
+          <input type="radio" name="Genero" value="Otro">Otro
+        </fieldset>
+
+        <label>Seleccione el/los juegos que prefiere :</label>
+        <fieldset style="display: grid; grid-template-columns: 2fr  2fr; grid-gap: 1rem">
+          <input type="checkbox" name="Juegos_seleccionados" value="Estrategia">Estrategia
+          <input type="checkbox" name="Juegos_seleccionados" value="Infantiles">Infantiles
+          <input type="checkbox" name="Juegos_seleccionados" value="Naipes">Naipes
+        </fieldset>
+
+        <label for="consulta">Escribi tu comentario y/o consulta :</label>
+        <textarea style="width: 100%; font-size: 1.5em;" rows="10" cols="40" id="consulta" name="consulta"
+          maxlength="200" placeholder="Escribi aqui tu consulta"></textarea>
+
+        <input type="reset" value="Borrar formulario" style="background-color: red; color: white;">
+        <input type="submit" value="Enviar" style="background-color: chartreuse;">
+
+      </fieldset>
+    </form>
+  </section>
+  <!-- boton watsapp -->
+  <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+    <i class="fa fa-whatsapp icono"></i>
+  </a>
+  <footer>
+    <a class="foo" href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+    <a class="foo" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    <a class="foo" href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    <a class="foo" href="https://plus.google.com/"><i class="fa-brands fa-google-plus-g"></i></a>
+    <a class="foo" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+    <h3 id="nosotros"> Propiedad del grupo ALA. Todos los derechos reservados ® </h3>
+  </footer>
 </body>
+
 </html>
